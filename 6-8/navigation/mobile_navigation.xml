@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_mobile">
+
+    <fragment
+        android:id="@+id/nav_mobile"
+        android:name="com.example.myapplication.ui.Mobiles.MobileFragment"
+        android:label="@string/menu_mobile"
+        tools:layout="@layout/fragment_mobile" />
+
+    <fragment
+        android:id="@+id/nav_laptop"
+        android:name="com.example.myapplication.ui.Laptop.LaptopFragment"
+        android:label="@string/menu_laptop"
+        tools:layout="@layout/fragment_laptop" />
+
+    <fragment
+        android:id="@+id/nav_clothes"
+        android:name="com.example.myapplication.ui.Clothes.ClothesFragment"
+        android:label="@string/menu_clothes"
+        tools:layout="@layout/fragment_clothes2" />
+
+    <fragment
+        android:id="@+id/nav_accessories"
+        android:name="com.example.myapplication.ui.Accessories.AccessoriesFragment"
+        android:label="@string/menu_accessories"
+        tools:layout="@layout/fragment_accessories" />
+</navigation>
