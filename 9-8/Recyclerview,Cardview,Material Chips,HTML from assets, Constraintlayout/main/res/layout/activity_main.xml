@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroup_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:chipSpacingHorizontal="25dp"
+        app:singleLine="true">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/java_chip_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:chipText="Java" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/python_chip_id"
+            style="@style/Widget.MaterialComponents.Chip.Entry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:chipText="Python" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/javascript_chip_id"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:chipText="JavaScript" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/nodejs_chip_id"
+            style="@style/Widget.MaterialComponents.Chip.Action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:chipText="Node Js" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/angular_js_chip_id"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:chipText="Angular Js" />
+
+    </com.google.android.material.chip.ChipGroup>
+
+</LinearLayout>
